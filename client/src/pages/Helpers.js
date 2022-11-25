@@ -1,7 +1,5 @@
-import React, {useContext, useEffect} from 'react';
-import {Button, Card, Col, Container, Image, Row} from "react-bootstrap";
-import fon from '../assets/aboutImage.jpg'
-import fon1 from '../assets/About2.png'
+import React from 'react';
+import {Container} from "react-bootstrap";
 import {observer} from "mobx-react-lite";
 
 const Help = observer(() => {
