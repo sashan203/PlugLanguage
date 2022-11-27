@@ -49,14 +49,11 @@ const TypeBrand = sequelize.define('type_brand', {
 })
 
 
-User.hasOne(Basket)
-Basket.belongsTo(User)
+User.hasOne(BasketDevice)
+BasketDevice.belongsTo(User)
 
 User.hasMany(Rating)
 Rating.belongsTo(User)
-
-Basket.hasMany(BasketDevice)
-BasketDevice.belongsTo(Basket)
 
 Type.hasMany(Device)
 Device.belongsTo(Type)

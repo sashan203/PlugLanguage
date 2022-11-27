@@ -24,6 +24,7 @@
     "web-vitals": "^3.1.0"
   },
   "scripts": {
+    "start": "npm start --prefix server",
     "install-client": "cd client && npm install && npm run start",
     "install-server": "cd server && npm install && npm start",
     "heroku-postbuild": "npm run install-client && npm run install-server"

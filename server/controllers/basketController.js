@@ -1,40 +1,15 @@
-const uuid = require('uuid')
-const path = require('path');
-const {Device, DeviceInfo,Basket,BasketDevice,User} = require('../models/models')
-const ApiError = require('../error/ApiError');
-
+const {Device,BasketDevice} = require('../models/models')
 class BacketController {
     async create(req, res, next) {
-        const {id} = req.params
-        const Basket = await Basket.create({id})
+        let {userId,deviceId} = req.body
+        const Basket = await BasketDevice.create({userId, deviceId})
         return res.json(Basket)
     }
 
-    async createDevice(req, res, next) {
-        const {Basketid,Deviceid} = req.params
-        const BasketDevice = await BasketDevice.createDevice({Basketid,Deviceid})
-        return res.json(BasketDevice)
-    }
-
     async getAll(req, res) {
-        let {brandId, typeId, limit, page} = req.query
-        page = page || 1
-        limit = limit || 9
-        let offset = page * limit - limit
-        let devices;
-        if (!brandId && !typeId) {
-            devices = await Device.findAndCountAll({limit, offset})
-        }
-        if (brandId && !typeId) {
-            devices = await Device.findAndCountAll({where:{brandId}, limit, offset})
-        }
-        if (!brandId && typeId) {
-            devices = await Device.findAndCountAll({where:{typeId}, limit, offset})
-        }
-        if (brandId && typeId) {
-            devices = await Device.findAndCountAll({where:{typeId, brandId}, limit, offset})
-        }
-        return res.json(devices)
+        let {userId} = req.query
+        const Basket = await BasketDevice.findAll({where:{userId}})
+        return res.json(Basket)
     }
 }
 

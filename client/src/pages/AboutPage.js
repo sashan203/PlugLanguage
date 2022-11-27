@@ -1,5 +1,5 @@
-import React, {useContext, useEffect} from 'react';
-import {Button, Card, Col, Container, Image, Row} from "react-bootstrap";
+import React from 'react';
+import { Col, Container, Image, Row} from "react-bootstrap";
 import fon from '../assets/aboutImage.jpg'
 import fon1 from '../assets/About2.png'
 import {observer} from "mobx-react-lite";

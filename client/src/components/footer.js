@@ -1,20 +1,10 @@
 import React, {useContext} from 'react';
-import {Context} from "../index";
 import {NavLink} from "react-router-dom";
 import {ABOUT,HELPS} from "../utils/consts";
 import {observer} from "mobx-react-lite";
-import {useNavigate} from 'react-router-dom'
 const Footer = observer(() => {
-    const {user} = useContext(Context)
-    const history = useNavigate()
-
-    const logOut = () => {
-        user.setUser({})
-        user.setIsAuth(false)
-    }
- 
     return ( 
-        <div>
+        <div className='w-100'>
             <footer class="basement">
                 <div class="bassment container">
                     <div className='d-flex justify-content-around mt-5 mb-5'>

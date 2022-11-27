@@ -1,10 +1,8 @@
-import React from 'react';
+import React, {useContext, useEffect} from 'react';
 
 const Basket = () => {
     return (
-        <div>
-            basket
-        </div>
+        <div>Basket</div>
     );
 };
 

@@ -1,4 +1,4 @@
-import React, {useContext, useEffect} from 'react';
+import React from 'react';
 import Image from "react-bootstrap/Image";
 import fon from '../assets/firs_fon.jpg'
 import {observer} from "mobx-react-lite";
