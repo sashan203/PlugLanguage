@@ -4,9 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon --quiet server",
-    "client": "npm start --prefix client",
-    "start": "cd server && npm run dev"
+    "client-install": "npm install --prefix client",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "cd ../ && npm start --prefix client",
+    "dev": "npm run server && npm run client"
   },
   "author": "",
   "license": "ISC",
