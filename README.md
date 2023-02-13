@@ -15,7 +15,7 @@ Plug Language - интернет-магазин одежды и обуви. Са
 
 ## Изображение главной страницы сайта:
 
-![image](https://user-images.githubusercontent.com/79353727/218558058-4f229002-0e2c-4f93-95bf-7e28e32b3934.png)
+![image](https://user-images.githubusercontent.com/79353727/218560816-d06cbdfa-e6fc-4b6a-a6ed-8a4ade4aaa2f.png)
 
 
 ## Как установить:
