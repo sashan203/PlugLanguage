@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/static/js/main.ceb5f676.js",
+    "static/media/aboutImage.jpg": "/static/media/aboutImage.61b39890267cd796c01d.jpg",
+    "static/media/firs_fon.jpg": "/static/media/firs_fon.b30fd5ccd27cd9c0d9fe.jpg",
+    "static/media/About2.png": "/static/media/About2.0c570fcfc2a073e65c1f.png",
+    "index.html": "/index.html",
+    "main.ceb5f676.js.map": "/static/js/main.ceb5f676.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.ceb5f676.js"
+  ]
+}
